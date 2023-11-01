@@ -14,7 +14,7 @@ spec:
         app: bitwarden
     spec:
       containers:
-      - image: hub.docker.com/r/bitwarden/server:latest
+      - image: bitwarden/server:latest
         resources:
           requests:
             memory: "64Mi"
