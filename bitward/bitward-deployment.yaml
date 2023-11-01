@@ -14,7 +14,7 @@ spec:
         app: bitwarden
     spec:
       containers:
-      - image: bitwarden/server:2023.8.1
+      - image: nginx:latest
         name: bitwarden
         ports:
         - containerPort: 8090
