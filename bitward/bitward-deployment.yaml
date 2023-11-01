@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bitwarden
+  name: nginx
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: bitwarden
+      app: nginx
   template:
     metadata:
       labels:
-        app: bitwarden
+        app: nginx
     spec:
       containers:
       - image: nginx:latest
-        name: bitwarden
+        name: nginx
         ports:
         - containerPort: 8090
